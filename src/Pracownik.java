@@ -7,4 +7,13 @@ public class Pracownik extends Osoba {
         this.stanowisko = stanowisko;
         this.pensja = pensja;
     }
+
+    @Override
+    public String toString() {
+        return "Pracownik{" +
+                super.toString() +
+                "stanowisko='" + stanowisko + '\'' +
+                ", pensja=" + pensja +
+                '}';
+    }
 }
