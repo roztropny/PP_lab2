@@ -18,14 +18,19 @@ public class Firma {
         }
     }
 
-    public int getPracownicyLength(){
-        return pracownicy.size();
+    public int getPracownicySize(){
+        return this.pracownicy.size();
     }
 
     @Override
     public String toString() {
+        String pracownicy = new String();
+        for (Pracownik pracownik : this.pracownicy){
+            pracownicy += pracownik.toString() + ',';
+        }
+        pracownicy = pracownicy.substring(0, pracownicy.length() - 1);
         return "Firma{" +
-                "nazwa='" + nazwa + '\'' +
+                "nazwa='" + this.nazwa + '\'' +
                 ", pracownicy[" + pracownicy + ']' +
                 '}';
     }
