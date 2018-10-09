@@ -17,4 +17,16 @@ public class Firma {
             this.dodajPracownika(pracownik);
         }
     }
+
+    public int getPracownicyLength(){
+        return pracownicy.size();
+    }
+
+    @Override
+    public String toString() {
+        return "Firma{" +
+                "nazwa='" + nazwa + '\'' +
+                ", pracownicy[" + pracownicy + ']' +
+                '}';
+    }
 }
